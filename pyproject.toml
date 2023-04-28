@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pros-interface"
+version = "0.1.0"
+description = ""
+authors = ["Richard Hadden <richard.hadden@oeaw.ac.at>"]
+readme = "README.md"
+packages = [{include = "pros_interface"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pynpm = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
