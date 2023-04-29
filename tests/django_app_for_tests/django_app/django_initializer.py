@@ -1,7 +1,6 @@
 # A script that's needed to setup django if it's not already running on a server.
 # Without this, you won't be able to import django modules
 def initialise_django():
-
     import sys, os, django
 
     # Find the project base directory
@@ -20,6 +19,3 @@ def initialise_django():
 
     # This is for setting up django
     django.setup()
-    
-    
-
