@@ -1,25 +1,26 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
-  "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9",
-    "tailwindcss-dotted-background": "^1.0.1",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.1",
-    "vite-plugin-solid": "^2.5.0"
-  },
-  "dependencies": {
-    "daisyui": "^2.51.6",
-    "phosphor-solid": "^1.1.5",
-    "solid-js": "^1.6.10",
-    "tailwindcss": "^3.3.2"
-  }
+    "name": "vite-template-solid",
+    "version": "0.0.0",
+    "description": "",
+    "scripts": {
+        "start": "vite",
+        "dev": "vite",
+        "playwright": "vite --port 3010",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@tailwindcss/typography": "^0.5.9",
+        "tailwindcss-dotted-background": "^1.0.1",
+        "typescript": "^4.9.5",
+        "vite": "^4.1.1",
+        "vite-plugin-solid": "^2.5.0"
+    },
+    "dependencies": {
+        "daisyui": "^2.51.6",
+        "phosphor-solid": "^1.1.5",
+        "solid-js": "^1.6.10",
+        "tailwindcss": "^3.3.2"
+    }
 }
