@@ -9,6 +9,7 @@ packages = [{include = "pros_interface"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 pynpm = "^0.1.2"
+camel-converter = "^3.0.0"
 
 
 [build-system]
