@@ -40,7 +40,10 @@ const TopBar: Component<TopBarProps> = (props) => {
     >
       <div class="flex flex-row items-center">
         {/* View Icon and Item Type */}
-        <div class="uppercase text-sm text-center  bg-slate-700 min-h-[4rem] flex flex-row items-center pl-4 pr-2 border-r-white border-r-[0.5px] rounded-bl-sm min-w-[12rem]">
+        <div
+          id="TopBarViewTypeIcon"
+          class="uppercase text-sm text-center  bg-slate-700 min-h-[4rem] flex flex-row items-center pl-4 pr-2 border-r-white border-r-[0.5px] rounded-bl-sm min-w-[12rem]"
+        >
           <Switch>
             <Match when={props.viewType === "edit"}>
               <FilePlus class="mr-3" size={20} weight="fill" />
@@ -52,11 +55,14 @@ const TopBar: Component<TopBarProps> = (props) => {
               <Eye class="mr-3" size={20} weight="fill" />
             </Match>
           </Switch>
-          <div class="text-center flex-grow">{props.itemType}</div>
+          <div id="TopBarItemType" class="text-center flex-grow">
+            {props.itemType}
+          </div>
         </div>
         {/* Entity Label wrapper */}
         <div class="min-h-[4rem] bg-primary flex flex-row items-center px-4 mr-4  border-r-white border-r-[0.5px] ">
           <div
+            id="TopBarItemLabel"
             class="text-center"
             classList={{
               "text-xs": props.itemLabel.length > 50,
