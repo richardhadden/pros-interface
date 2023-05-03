@@ -10,6 +10,10 @@ interface_path = Path(__file__.split("/tests/")[0], "pros_interface", "interface
 npm_package = NPMPackage(interface_path)
 
 
+def route(url):
+    return "http://localhost:3010" + url
+
+
 @pytest.fixture(scope="module", autouse=True)
 def run_npm_dev():
     # Autostarts the npm dev server

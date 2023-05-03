@@ -1,11 +1,11 @@
 # A script that's needed to setup django if it's not already running on a server.
 # Without this, you won't be able to import django modules
-def initialise_django():
+def initialise_django(setup_django=True):
     import sys, os, django
 
     # Find the project base directory
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    print(BASE_DIR)
+
     # Add the project base directory to the sys.path
     # This means the script will look in the base directory for any module imports
     # Therefore you'll be able to import analysis.models etc
@@ -18,4 +18,5 @@ def initialise_django():
     os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 
     # This is for setting up django
-    django.setup()
+    if setup_django:
+        django.setup()
